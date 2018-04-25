@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.ttrpstudio.ttool.act.AppMain"
+tools:showIn="@layout/activity_app">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_model"
+        android:text="Model"
+        android:gravity="center|start"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="-12dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:textSize="40dp"/>
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="true"
+        app:mt_hint="@string/search_input_hint"
+        app:mt_navIconEnabled="false"
+        app:mt_maxSuggestionsCount="10"
+        app:mt_placeholder="@string/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1.5dp"
+        android:layout_marginEnd="1.5dp"
+        android:id="@+id/md_search_bar" />
+
+        <include layout="@layout/card_msg"/>
+
+        <include layout="@layout/card_sys"/>
+
+        <include layout="@layout/card_app"/>
+
+        <include layout="@layout/card_reboot"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

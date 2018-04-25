@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TTool</string>
+    <string name="action_settings">设置</string>
+    <string name="login">登录</string>
+    <string name="account">账户</string>
+    <string name="password">密码</string>
+    <string name="no_account">没有账户？</string>
+    <string name="user_login">用户登录</string>
+    <string name="user_registration">用户注册</string>
+    <string name="action_exit">退出</string>
+    <string name="user_name">用户名</string>
+    <string name="main_msg">主要信息</string>
+    <string name="android_version">安卓版本：</string>
+    <string name="android_api">API级别：</string>
+    <string name="cpu_trim">CPU调整</string>
+    <string name="optimize_phone">优化你手机性能</string>
+    <string name="save_password">保存密码</string>
+    <string name="app_manage">应用管理</string>
+    <string name="app_manage_msg">管理你的手机应用</string>
+    <string name="reboot">重启</string>
+    <string name="reboot_msg">高级重启</string>
+    <string name="search_input_hint">请输入</string>
+    <string name="search">搜索</string>
+    <string name="testacc">admin</string>
+    <string name="testword">ttrp</string>
+</resources>
