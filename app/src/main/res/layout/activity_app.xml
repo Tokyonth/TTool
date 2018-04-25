@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/act_app_coor"
-    android:background="#10757575"
+    android:background="#10787878"
     tools:context="com.ttrpstudio.ttool.act.AppMain">
 
     <android.support.design.widget.AppBarLayout

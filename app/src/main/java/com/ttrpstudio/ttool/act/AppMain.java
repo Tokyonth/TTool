@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,9 +15,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.hitomi.cslibrary.CrazyShadow;
-import com.hitomi.cslibrary.base.CrazyShadowDirection;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.ttrpstudio.ttool.R;
 import com.ttrpstudio.ttool.phoneinfo.PhoneMsg;
@@ -73,14 +69,6 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
         btn_setup.setOnClickListener(this);
         btn_scan.setOnClickListener(this);
         tv_model.setText(PhoneMsg.model());
-
-
-
-    }
-
-    private int Dip2px(float dpValue) {
-        final float scale = getResources().getDisplayMetrics().density;
-        return (int) (dpValue * scale + 0.5f);
     }
 
     @Override
@@ -121,7 +109,7 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
                 Toast.makeText(this,"Tset2",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.card_msg:
-                Toast.makeText(this,"Tset3",Toast.LENGTH_SHORT).show();
+
                 break;
             case R.id.card_sys:
                 Toast.makeText(this,"Tset4",Toast.LENGTH_SHORT).show();
@@ -142,6 +130,7 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+
             return true;
         }
         return super.onOptionsItemSelected(item);

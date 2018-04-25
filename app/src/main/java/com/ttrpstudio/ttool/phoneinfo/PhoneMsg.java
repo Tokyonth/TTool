@@ -47,7 +47,5 @@ public class PhoneMsg {
     public static String model() {
         return android.os.Build.MODEL;
     }
-    public static String version() {
-        return String.valueOf(android.os.Build.VERSION.SDK_INT);
-    }
+    public static String version() {return String.valueOf(android.os.Build.VERSION.SDK_INT);}
 }
