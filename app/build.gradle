@@ -35,5 +35,4 @@ dependencies {
 
     compile 'com.github.StevenDXC:DxLoadingButton:2.0'
     implementation 'com.github.mancj:MaterialSearchBar:0.7.6'
-    compile 'com.github.Hitomis:CrazyShadow:v1.0.1'
 }

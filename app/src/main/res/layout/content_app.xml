@@ -27,7 +27,7 @@ tools:showIn="@layout/activity_app">
 
     <com.mancj.materialsearchbar.MaterialSearchBar
         style="@style/MaterialSearchBarLight"
-        app:mt_speechMode="true"
+        app:mt_speechMode="false"
         app:mt_hint="@string/search_input_hint"
         app:mt_navIconEnabled="false"
         app:mt_maxSuggestionsCount="10"

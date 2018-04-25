@@ -44,11 +44,6 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(Color.TRANSPARENT);
-        }
         Intent intent = getIntent();
         Boolean Verification_bool = intent.getBooleanExtra("Verification",false);
         if (Verification_bool = false)
@@ -79,13 +74,7 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
         btn_scan.setOnClickListener(this);
         tv_model.setText(PhoneMsg.model());
 
-        new CrazyShadow.Builder()
-                .setContext(this)
-                .setDirection(CrazyShadowDirection.ALL)
-                .setShadowRadius(Dip2px(4))
-                .setCorner(Dip2px(6))
-                .setImpl(CrazyShadow.IMPL_DRAW)
-                .action(findViewById(R.id.md_search_bar));
+
 
     }
 
@@ -153,7 +142,6 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-
             return true;
         }
         return super.onOptionsItemSelected(item);

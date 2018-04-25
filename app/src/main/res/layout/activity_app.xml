@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/act_app_coor"
+    android:background="#10757575"
     tools:context="com.ttrpstudio.ttool.act.AppMain">
 
     <android.support.design.widget.AppBarLayout
@@ -33,14 +34,14 @@
                 android:layout_marginLeft="10dp"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/ic_scan"/>
+                android:background="@drawable/ic_qrcode"/>
 
             <Button
                 android:id="@+id/btn_setup"
                 android:layout_marginLeft="10dp"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/ic_setup"/>
+                android:background="@drawable/ic_prompt"/>
 
             <TextView
                 android:textColor="#727272"
