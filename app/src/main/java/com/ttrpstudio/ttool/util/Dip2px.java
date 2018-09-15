@@ -2,8 +2,6 @@ package com.ttrpstudio.ttool.util;
 
 import android.content.Context;
 
-import com.ttrpstudio.ttool.act.AppMain;
-
 /**
  * Created by TOKYONTH on 2018/4/24/024.
  */

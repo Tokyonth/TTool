@@ -1,8 +1,6 @@
-package com.ttrpstudio.ttool.act;
+package com.ttrpstudio.ttool.activitys;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -10,8 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,6 +44,7 @@ public class AppMain extends AppCompatActivity implements View.OnClickListener,M
         setSupportActionBar(toolbar);
         setTitle(null);
         initView();
+        Toast.makeText(this,"登录成功！",Toast.LENGTH_SHORT);
     }
 
     private void initView() {
